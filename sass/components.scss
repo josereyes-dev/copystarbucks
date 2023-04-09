@@ -1,0 +1,25 @@
+@mixin btn-base{
+    padding: 0.25rem 1.5rem;
+    border-radius: 50rem;
+}
+
+.btn-main {
+    @include btn-base();
+    border: none;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+}
+
+.btn-second{
+    @include btn-base();
+
+    background-color: transparent;
+    
+}
+
+.icon{
+    padding: 2rem 2rem;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #00000055;
+}
