@@ -50,6 +50,7 @@
 
 .steps {
   display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
   justify-content: space-around;
@@ -164,6 +165,4 @@ body {
 .started .segments-card {
   width: 100%;
   padding: 0 2rem 2rem 2rem;
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=globals.css.map */

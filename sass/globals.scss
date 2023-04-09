@@ -1,0 +1,122 @@
+@use "components";
+
+html {
+    min-width: 100vw;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    height: 6.5rem;
+    border-bottom: solid 1px #ddd;
+
+
+    .logo {
+        padding: 0 3rem;
+        display: flex;
+        justify-content: space-between;
+
+        a img {
+            max-width: 4rem;
+
+        }
+    }
+
+    .join-now {
+        padding: 0 3rem;
+        display: flex;
+        gap: 2rem;
+
+        .enlace {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+.rewards {
+    display: flex;
+    align-items: center;
+    background-color: #1e3932;
+    height: 3rem;
+
+    .text {
+        padding: 1rem 0 0 8rem;
+        color: #fff;
+        font-weight: 700;
+    }
+}
+
+.sec-join {
+    width: 100%;
+    padding: 4rem 4rem 4rem 0;
+    height: 40rem;
+    background-image: url(../assets/estrella.png);
+    background-size: cover;
+    background-repeat: none;
+    .container {
+        padding: 10rem 10rem 10rem 0;
+        flex-direction: column;
+
+        p {
+            color: #1B1E1D;
+        }
+
+        .txt-coffee {
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .txt-join {
+            font-size: 1.3rem;
+            padding: 0 0 1rem 0;
+        }
+
+        .btn-main-1 {
+            background-color: #008248;
+            padding: 0rem 1rem 0.3rem 1rem;
+            border-radius: 50rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border: none;
+            color: #fff;
+        }
+
+        .txt-app{
+            padding: 0.7rem 0;
+            color: #000;
+            font-size: 1.2rem;
+            a{
+                color: #000;
+            }
+        }
+    }
+}
+
+.started{
+    height: 35rem;
+    max-width: 992px;
+    margin: auto;
+    width: 100%;
+    
+
+    .getting{
+        color: #212121;
+        text-align: center;
+        padding: 8rem 0 0 0;
+    }
+    .segments-card{
+        width: 100%;
+        padding: 0 2rem 2rem 2rem;
+
+    }
+     
+}
