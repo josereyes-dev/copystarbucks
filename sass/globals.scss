@@ -121,20 +121,62 @@ body {
 }
 
 .favorites{
-    height: 40rem;
+    background-color: #f1f8f6;
     margin: auto;
 
     .fav{
         padding: 5rem 10rem;
         width: 100%;
-        background-color: #f1f8f6;
-    
+
+        
         h3{
             text-align: center;
             color: #000;
             font-weight: 600;
         }
     }
-
-
+    .container-menu{
+        display: flex;
+        flex-direction: column;
+    
+    
+        .btn-coffee{
+            text-align: center;
+            width: 100%;
+    
+    
+        }
+        .product{
+            display: flex;
+            padding: 0 10rem;
+            background-color: #d4e9e2;
+            box-shadow: inset 0 7px 9px -7px rgba(0,0,0,.14);
+            flex-direction: row;
+    
+             .coffe{
+                padding: 0 4rem 0 8rem;
+                justify-content: center;
+    
+                img{
+                    width: 20rem;
+                }
+            }
+             .desc{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                max-width: 375px;
+    
+                h3{
+                    font-weight: 600;
+                }
+                p{
+                    font-weight: 600;
+                }
+             }
+            
+        }
+    }
+    
 }
+
