@@ -102,7 +102,7 @@ body {
 }
 
 .started{
-    height: 35rem;
+    height: 40rem;
     max-width: 992px;
     margin: auto;
     width: 100%;
@@ -116,7 +116,25 @@ body {
     .segments-card{
         width: 100%;
         padding: 0 2rem 2rem 2rem;
-
     }
      
+}
+
+.favorites{
+    height: 40rem;
+    margin: auto;
+
+    .fav{
+        padding: 5rem 10rem;
+        width: 100%;
+        background-color: #f1f8f6;
+    
+        h3{
+            text-align: center;
+            color: #000;
+            font-weight: 600;
+        }
+    }
+
+
 }
