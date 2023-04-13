@@ -61,6 +61,7 @@ body {
     background-image: url(../assets/estrella.png);
     background-size: cover;
     background-repeat: none;
+
     .container {
         padding: 10rem 10rem 10rem 0;
         flex-direction: column;
@@ -90,112 +91,140 @@ body {
             color: #fff;
         }
 
-        .txt-app{
+        .txt-app {
             padding: 0.7rem 0;
             color: #000;
             font-size: 1.2rem;
-            a{
+
+            a {
                 color: #000;
             }
         }
     }
 }
 
-.started{
-    max-width: 992px;
-    margin: auto;
-    width: 100%;
-    
-
-    .getting{
+.started {
+    .getting {
         color: #212121;
         text-align: center;
         padding: 8rem 0 0 0;
+        
     }
-    .segments-cards{
-        width: 100%;
-        padding: 0 2rem 2rem 2rem;
+
+    .segments-cards {
+        padding: 0 1rem 2rem 2rem;
     }
-     
 }
 
-.favorites{
+.favorites {
     background-color: #f1f8f6;
     margin: auto;
 
-    .fav{
+    .fav {
         padding: 5rem 10rem;
         width: 100%;
 
-        
-        h3{
+
+        h3 {
             text-align: center;
             color: #000;
             font-weight: 600;
         }
     }
-    .container-menu{
+
+    .container-menu {
         display: flex;
         flex-direction: column;
-    
-    
-        .btn-coffee{
+
+
+        .btn-coffee {
             text-align: center;
             width: 100%;
-    
-    
+
+
         }
-        .product{
+
+        .product {
             display: flex;
             padding: 0 10rem;
             background-color: #d4e9e2;
-            box-shadow: inset 0 7px 9px -7px rgba(0,0,0,.14);
+            box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, .14);
             flex-direction: row;
-    
-             .coffe{
+
+            .coffe {
                 padding: 0 4rem 0 8rem;
                 justify-content: center;
-    
-                img{
+
+                img {
                     width: 20rem;
                 }
             }
-             .desc{
+
+            .desc {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 max-width: 375px;
-    
-                h3{
+
+                h3 {
                     font-weight: 600;
                 }
-                p{
+
+                p {
                     font-weight: 600;
                 }
-             }
-            
+            }
+
         }
     }
-    
+
 }
 
-.extras{
+.extras {
     @extend .started;
-    
-    .endless{
+
+    .endless {
         @extend .started, .getting;
 
-        h3{
+        h3 {
+
             font-size: 1.8rem;
             font-weight: 600;
         }
-        p{
+
+        p {
             text-align: center;
+            font-weight: 600
         }
     }
 
-    .extras-cards{
+    .extras-cards {
         @extend .started, .segments-cards;
     }
 
+}
+
+.cash {
+    background-color: #f3f1e7;
+    @extend .started;
+
+    .intro-cash {
+        @extend .started, .getting;
+        padding: 3rem 0;
+
+        h3{
+            font-weight: 700;
+        }
+
+        p{
+            padding: 0 22rem;
+            font-weight: 600;
+        }
+    }
+    .separator{
+        flex: 1;
+            border-top: 1px solid #000;
+            margin: 0 1rem;
+            padding: 2rem;
+    }
 }

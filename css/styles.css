@@ -69,6 +69,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding: 0 3rem;
 }
 .steps i, .extras-cards .desc-extra i {
   padding: 0 0 1rem 0;
@@ -88,9 +89,6 @@
   color: #145D44;
 }
 
-.extras-cards .desc-extra {
-  width: 33.33%;
-}
 .extras-cards .desc-extra .img-extra img {
   width: 7rem;
 }
@@ -98,7 +96,7 @@
   padding: 2rem 0 1rem 0;
 }
 .extras-cards .desc-extra p {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1rem;
 }
 .extras-cards .card-content {
@@ -106,6 +104,53 @@
   flex-direction: column;
 }
 
+.cash .dolar-1, .cash .dolar-2 {
+  display: flex;
+  padding: 0 3rem;
+  flex-direction: row;
+}
+.cash .dolar-1 .cash-1, .cash .dolar-2 .cash-1, .cash .dolar-2 .cash-2 {
+  display: flex;
+  flex-direction: column;
+}
+.cash .dolar-1 .cash-1 .p-star, .cash .dolar-2 .cash-1 .p-star, .cash .dolar-2 .cash-2 .p-star {
+  margin: 0;
+  min-width: 200px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.cash .dolar-1 .cash-1 .p-star .star, .cash .dolar-2 .cash-1 .p-star .star, .cash .dolar-2 .cash-2 .p-star .star {
+  font-size: 1rem;
+}
+.cash .dolar-1 .cash-1-scan, .cash .dolar-1 .cash-2-save, .cash .dolar-1 .cash-2-scan, .cash .dolar-2 .cash-1-scan, .cash .dolar-2 .cash-2-save, .cash .dolar-2 .cash-2-scan, .cash .dolar-1 .cash-1-save, .cash .dolar-2 .cash-1-save {
+  display: flex;
+  min-width: 400px;
+}
+.cash .dolar-1 .cash-1-scan img, .cash .dolar-1 .cash-2-save img, .cash .dolar-1 .cash-2-scan img, .cash .dolar-2 .cash-1-scan img, .cash .dolar-2 .cash-2-save img, .cash .dolar-2 .cash-2-scan img, .cash .dolar-1 .cash-1-save img, .cash .dolar-2 .cash-1-save img {
+  height: 10rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+.cash .dolar-1 .cash-1-scan .scan-detail h3, .cash .cash-2-save .dolar-1 .cash-1-scan .register-detail h3, .cash .dolar-1 .cash-2-save .scan-detail h3, .cash .dolar-1 .cash-2-save .register-detail h3, .cash .cash-2-scan .dolar-1 .cash-1-scan .preload-detail h3, .cash .cash-2-scan .dolar-1 .cash-2-save .preload-detail h3, .cash .dolar-1 .cash-2-scan .scan-detail h3, .cash .cash-2-save .dolar-1 .cash-2-scan .register-detail h3, .cash .dolar-1 .cash-2-scan .preload-detail h3, .cash .dolar-2 .cash-1-scan .scan-detail h3, .cash .cash-2-save .dolar-2 .cash-1-scan .register-detail h3, .cash .dolar-2 .cash-2-save .scan-detail h3, .cash .dolar-2 .cash-2-save .register-detail h3, .cash .cash-2-scan .dolar-2 .cash-1-scan .preload-detail h3, .cash .cash-2-scan .dolar-2 .cash-2-save .preload-detail h3, .cash .dolar-2 .cash-2-scan .scan-detail h3, .cash .cash-2-save .dolar-2 .cash-2-scan .register-detail h3, .cash .dolar-2 .cash-2-scan .preload-detail h3, .cash .dolar-1 .cash-1-save .scan-detail h3, .cash .cash-2-save .dolar-1 .cash-1-save .register-detail h3, .cash .cash-2-scan .dolar-1 .cash-1-save .preload-detail h3, .cash .dolar-2 .cash-1-save .scan-detail h3, .cash .cash-2-save .dolar-2 .cash-1-save .register-detail h3, .cash .cash-2-scan .dolar-2 .cash-1-save .preload-detail h3, .cash .dolar-1 .cash-1-save .save-detail h3, .cash .dolar-2 .cash-1-save .save-detail h3 {
+  font-size: 1.5rem;
+}
+.cash .dolar-1 .cash-1-scan .scan-detail p, .cash .cash-2-save .dolar-1 .cash-1-scan .register-detail p, .cash .dolar-1 .cash-2-save .scan-detail p, .cash .dolar-1 .cash-2-save .register-detail p, .cash .cash-2-scan .dolar-1 .cash-1-scan .preload-detail p, .cash .cash-2-scan .dolar-1 .cash-2-save .preload-detail p, .cash .dolar-1 .cash-2-scan .scan-detail p, .cash .cash-2-save .dolar-1 .cash-2-scan .register-detail p, .cash .dolar-1 .cash-2-scan .preload-detail p, .cash .dolar-2 .cash-1-scan .scan-detail p, .cash .cash-2-save .dolar-2 .cash-1-scan .register-detail p, .cash .dolar-2 .cash-2-save .scan-detail p, .cash .dolar-2 .cash-2-save .register-detail p, .cash .cash-2-scan .dolar-2 .cash-1-scan .preload-detail p, .cash .cash-2-scan .dolar-2 .cash-2-save .preload-detail p, .cash .dolar-2 .cash-2-scan .scan-detail p, .cash .cash-2-save .dolar-2 .cash-2-scan .register-detail p, .cash .dolar-2 .cash-2-scan .preload-detail p, .cash .dolar-1 .cash-1-save .scan-detail p, .cash .cash-2-save .dolar-1 .cash-1-save .register-detail p, .cash .cash-2-scan .dolar-1 .cash-1-save .preload-detail p, .cash .dolar-2 .cash-1-save .scan-detail p, .cash .cash-2-save .dolar-2 .cash-1-save .register-detail p, .cash .cash-2-scan .dolar-2 .cash-1-save .preload-detail p, .cash .dolar-1 .cash-1-save .save-detail p, .cash .dolar-2 .cash-1-save .save-detail p {
+  font-size: 1rem;
+}
+.cash .dolar-1 .cash-1-save .save-detail, .cash .dolar-2 .cash-1-save .save-detail {
+  margin-right: 200px;
+}
+.cash .separator {
+  flex: 1;
+  border-top: 5px solid #ddd;
+  margin: 0 1rem;
+}
+.cash .cash-2-scan .preload-detail {
+  width: 13rem;
+}
+.cash .cash-2-save {
+  width: 13rem;
+}
 html {
   min-width: 98vw;
 }
@@ -195,19 +240,13 @@ body {
   color: #000;
 }
 
-.started, .extras .extras-cards, .extras .endless, .extras {
-  max-width: 992px;
-  margin: auto;
-  width: 100%;
-}
-.started .getting, .extras .getting, .extras .endless {
+.started .getting, .cash .getting, .cash .intro-cash, .extras .getting, .extras .endless {
   color: #212121;
   text-align: center;
   padding: 8rem 0 0 0;
 }
-.started .segments-cards, .extras .segments-cards, .extras .extras-cards {
-  width: 100%;
-  padding: 0 2rem 2rem 2rem;
+.started .segments-cards, .cash .segments-cards, .extras .segments-cards, .extras .extras-cards {
+  padding: 0 1rem 2rem 2rem;
 }
 
 .favorites {
@@ -264,6 +303,26 @@ body {
 }
 .extras .endless p {
   text-align: center;
+  font-weight: 600;
+}
+.cash {
+  background-color: #f3f1e7;
+}
+.cash .intro-cash {
+  padding: 3rem 0;
+}
+.cash .intro-cash h3 {
+  font-weight: 700;
+}
+.cash .intro-cash p {
+  padding: 0 22rem;
+  font-weight: 600;
+}
+.cash .separator {
+  flex: 1;
+  border-top: 1px solid #000;
+  margin: 0 1rem;
+  padding: 2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -57,7 +57,7 @@
 }
 
 
-.btn-menu{
+.btn-menu {
     background-color: transparent;
     border: none;
     letter-spacing: 0.1rem;
@@ -65,11 +65,11 @@
     margin-bottom: 1px solid #000;
 
 
-    span{
+    span {
         font-size: 2rem;
         font-weight: 600;
 
-        .star{
+        .star {
             color: #CBA258;
             font-size: 1rem;
             padding: 0.2rem;
@@ -81,49 +81,139 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    padding: 0 3rem;
+
     i {
-        padding: 0 0 1rem 0 ;
+        padding: 0 0 1rem 0;
         font-size: 3rem;
         font-weight: 1;
         color: #145D44;
     }
-    h3{
+
+    h3 {
         font-size: 1.2rem;
         color: #000;
     }
-    p{
+
+    p {
         font-size: 1rem;
         font-weight: 500;
     }
-    a{
+
+    a {
         color: #145D44;
     }
 }
 
 
-.extras-cards{  
-    .desc-extra{
+.extras-cards {
+    .desc-extra {
         @extend .steps;
-        width: 33.33%;
 
-        .img-extra{
-            img{
+        .img-extra {
+            img {
                 width: 7rem;
             }
         }
-    
-        h3{
+
+        h3 {
             padding: 2rem 0 1rem 0;
         }
-        p{
-            font-weight: 400;
+
+        p {
+            font-weight: 600;
             font-size: 1rem;
         }
     }
-    
-    .card-content{
+
+    .card-content {
         display: flex;
         flex-direction: column;
 
     }
 }
+
+.cash {
+    .dolar-1 {
+        display: flex;
+        padding: 0 3rem;
+        flex-direction: row;
+
+        .cash-1 {
+            display: flex;
+            flex-direction: column;
+
+            .p-star {
+                margin: 0;
+                min-width: 200px;
+                font-size: 1.5rem;
+                font-weight: 700;
+
+                .star {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .cash-1-scan {
+            display: flex;
+            min-width: 400px;
+
+            img {
+                height: 10rem;
+                margin-left: 2rem;
+                margin-right: 1rem;
+            }
+
+            .scan-detail {
+
+                h3 {
+                    font-size: 1.5rem;
+                }
+
+                p {
+                    font-size: 1rem
+                }
+            }
+        }
+
+        .cash-1-save {
+            @extend .cash-1-scan;
+
+            .save-detail {
+                @extend .scan-detail;
+                margin-right: 200px;
+            }
+        }
+    }
+    .separator{
+        flex: 1;
+            border-top: 5px solid #ddd;
+            margin: 0 1rem;
+    }
+    
+    .dolar-2 {
+        @extend .dolar-1;
+
+        .cash-2 {
+            @extend .cash-1;
+            }
+        }
+
+        .cash-2-scan {
+            @extend .cash-1-scan;
+            .preload-detail {
+                @extend .scan-detail;
+                width: 13rem;
+            }
+        }
+
+        .cash-2-save {
+            @extend .cash-1-scan;
+                width: 13rem;
+
+            .register-detail {
+                @extend .scan-detail;
+            }
+        }
+    }
