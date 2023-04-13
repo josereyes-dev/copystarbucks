@@ -243,12 +243,12 @@ body {
   color: #000;
 }
 
-.started .getting, .cash .getting, .cash .intro-cash, .extras .getting, .extras .endless {
+.started .getting, .questions .getting, .keep-rewards .getting, .cash .getting, .cash .intro-cash, .extras .getting, .extras .endless {
   color: #212121;
   text-align: center;
   padding: 8rem 0 0 0;
 }
-.started .segments-cards, .cash .segments-cards, .extras .segments-cards, .extras .extras-cards {
+.started .segments-cards, .questions .segments-cards, .keep-rewards .segments-cards, .cash .segments-cards, .extras .segments-cards, .extras .extras-cards {
   padding: 0 1rem 2rem 2rem;
 }
 
@@ -326,6 +326,54 @@ body {
   border-top: 1px solid #000;
   margin: 0 1rem;
   padding: 2rem;
+}
+
+.keep-rewards {
+  padding: 1rem 3rem;
+  background-image: url(/assets/starbucks-bckgr.jpg);
+  background-position: center;
+}
+.keep-rewards .keep {
+  background-color: #d4e9e2;
+  display: flex;
+}
+.keep-rewards .keep .star img {
+  width: 300px;
+}
+.keep-rewards .keep .keep-desc {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.keep-rewards .keep .keep-desc p {
+  padding: 0 2rem;
+  font-weight: 600;
+}
+.keep-rewards .keep .keep-desc p a {
+  color: #008248;
+}
+.keep-rewards .keep .keep-desc img {
+  width: 200px;
+  padding: 1rem;
+}
+.keep-rewards .keep .keep-button {
+  padding: 0 0 2rem 0;
+}
+.keep-rewards .keep .keep-button .btn-main {
+  background-color: #008248;
+}
+
+.questions .questions-desc {
+  padding: 4rem 15rem;
+}
+.questions .questions-desc p {
+  padding: 1rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.questions .questions-desc p a {
+  color: #008248;
 }
 
 /*# sourceMappingURL=styles.css.map */

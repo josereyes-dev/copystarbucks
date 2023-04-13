@@ -231,3 +231,68 @@ body {
             padding: 2rem;
     }
 }
+
+.keep-rewards{
+    @extend .started;
+    padding: 1rem 3rem;
+    background-image: url(/assets/starbucks-bckgr.jpg);
+    background-position: center;
+
+    .keep{
+            background-color: #d4e9e2;
+            display: flex;
+
+            .star{
+                img{
+                    width: 300px;
+                }
+            }
+            .keep-desc{
+                padding: 2rem;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                
+                p{
+                    padding: 0 2rem;
+                    font-weight: 600;
+
+                    a{
+                        color: #008248;
+                    }
+                }
+
+                img{
+                    width: 200px;
+                    padding: 1rem;
+                }
+
+            }
+
+            .keep-button{
+                padding: 0 0 2rem 0;
+
+                .btn-main{
+                    background-color: #008248;
+                }
+            }
+        }
+}
+
+.questions{
+    @extend .started;
+
+    .questions-desc{
+        padding: 4rem 15rem;
+
+        p{
+            padding: 1rem 0;
+            font-size: 1rem;
+            font-weight: 600;
+
+            a{
+                color: #008248;
+            }
+        }
+    }
+}
