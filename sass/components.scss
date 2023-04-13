@@ -56,6 +56,27 @@
     }
 }
 
+
+.btn-menu{
+    background-color: transparent;
+    border: none;
+    letter-spacing: 0.1rem;
+    padding: 0 1rem;
+    margin-bottom: 1px solid #000;
+
+
+    span{
+        font-size: 2rem;
+        font-weight: 600;
+
+        .star{
+            color: #CBA258;
+            font-size: 1rem;
+            padding: 0.2rem;
+        }
+    }
+}
+
 .steps {
     display: flex;
     flex-direction: column;
@@ -79,22 +100,30 @@
     }
 }
 
-.btn-menu{
-    background-color: transparent;
-    border: none;
-    letter-spacing: 0.1rem;
-    padding: 0 1rem;
-    margin-bottom: 1px solid #000;
 
+.extras-cards{  
+    .desc-extra{
+        @extend .steps;
+        width: 33.33%;
 
-    span{
-        font-size: 2rem;
-        font-weight: 600;
-
-        .star{
-            color: #CBA258;
-            font-size: 1rem;
-            padding: 0.2rem;
+        .img-extra{
+            img{
+                width: 7rem;
+            }
         }
+    
+        h3{
+            padding: 2rem 0 1rem 0;
+        }
+        p{
+            font-weight: 400;
+            font-size: 1rem;
+        }
+    }
+    
+    .card-content{
+        display: flex;
+        flex-direction: column;
+
     }
 }
