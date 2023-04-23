@@ -28,10 +28,8 @@
 }
 
 .main-menu {
+  padding: 0;
   margin-bottom: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 .main-menu li {
   list-style: none;
@@ -61,7 +59,7 @@
 }
 .btn-menu span .star {
   color: #CBA258;
-  font-size: 1rem;
+  font-size: 0.5rem;
   padding: 0.2rem;
 }
 
@@ -104,53 +102,44 @@
   flex-direction: column;
 }
 
-.cash .dolar-1, .cash .dolar-2 {
+.cash .dolar-1 {
   display: flex;
   padding: 0 3rem;
   flex-direction: row;
 }
-.cash .dolar-1 .cash-1, .cash .dolar-2 .cash-1, .cash .dolar-2 .cash-2 {
+.cash .dolar-1 .cash-1 {
   display: flex;
   flex-direction: column;
 }
-.cash .dolar-1 .cash-1 .p-star, .cash .dolar-2 .cash-1 .p-star, .cash .dolar-2 .cash-2 .p-star {
+.cash .dolar-1 .cash-1 .p-star {
   margin: 0;
   min-width: 200px;
   font-size: 1.5rem;
   font-weight: 700;
 }
-.cash .dolar-1 .cash-1 .p-star .star, .cash .dolar-2 .cash-1 .p-star .star, .cash .dolar-2 .cash-2 .p-star .star {
+.cash .dolar-1 .cash-1 .p-star .star {
   font-size: 1rem;
 }
-.cash .dolar-1 .cash-1-scan, .cash .dolar-1 .cash-2-save, .cash .dolar-1 .cash-2-scan, .cash .dolar-2 .cash-1-scan, .cash .dolar-2 .cash-2-save, .cash .dolar-2 .cash-2-scan, .cash .dolar-1 .cash-1-save, .cash .dolar-2 .cash-1-save {
+.cash .dolar-1 .cash-1-scan, .cash .dolar-1 .cash-1-save {
   display: flex;
-  min-width: 400px;
 }
-.cash .dolar-1 .cash-1-scan img, .cash .dolar-1 .cash-2-save img, .cash .dolar-1 .cash-2-scan img, .cash .dolar-2 .cash-1-scan img, .cash .dolar-2 .cash-2-save img, .cash .dolar-2 .cash-2-scan img, .cash .dolar-1 .cash-1-save img, .cash .dolar-2 .cash-1-save img {
+.cash .dolar-1 .cash-1-scan img, .cash .dolar-1 .cash-1-save img {
   height: 10rem;
   margin-left: 2rem;
   margin-right: 1rem;
 }
-.cash .dolar-1 .cash-1-scan .scan-detail h3, .cash .cash-2-save .dolar-1 .cash-1-scan .register-detail h3, .cash .dolar-1 .cash-2-save .scan-detail h3, .cash .dolar-1 .cash-2-save .register-detail h3, .cash .cash-2-scan .dolar-1 .cash-1-scan .preload-detail h3, .cash .cash-2-scan .dolar-1 .cash-2-save .preload-detail h3, .cash .dolar-1 .cash-2-scan .scan-detail h3, .cash .cash-2-save .dolar-1 .cash-2-scan .register-detail h3, .cash .dolar-1 .cash-2-scan .preload-detail h3, .cash .dolar-2 .cash-1-scan .scan-detail h3, .cash .cash-2-save .dolar-2 .cash-1-scan .register-detail h3, .cash .dolar-2 .cash-2-save .scan-detail h3, .cash .dolar-2 .cash-2-save .register-detail h3, .cash .cash-2-scan .dolar-2 .cash-1-scan .preload-detail h3, .cash .cash-2-scan .dolar-2 .cash-2-save .preload-detail h3, .cash .dolar-2 .cash-2-scan .scan-detail h3, .cash .cash-2-save .dolar-2 .cash-2-scan .register-detail h3, .cash .dolar-2 .cash-2-scan .preload-detail h3, .cash .dolar-1 .cash-1-save .scan-detail h3, .cash .cash-2-save .dolar-1 .cash-1-save .register-detail h3, .cash .cash-2-scan .dolar-1 .cash-1-save .preload-detail h3, .cash .dolar-2 .cash-1-save .scan-detail h3, .cash .cash-2-save .dolar-2 .cash-1-save .register-detail h3, .cash .cash-2-scan .dolar-2 .cash-1-save .preload-detail h3, .cash .dolar-1 .cash-1-save .save-detail h3, .cash .dolar-2 .cash-1-save .save-detail h3 {
+.cash .dolar-1 .cash-1-scan .scan-detail h3, .cash .dolar-1 .cash-1-save .scan-detail h3, .cash .dolar-1 .cash-1-save .save-detail h3 {
   font-size: 1.5rem;
 }
-.cash .dolar-1 .cash-1-scan .scan-detail p, .cash .cash-2-save .dolar-1 .cash-1-scan .register-detail p, .cash .dolar-1 .cash-2-save .scan-detail p, .cash .dolar-1 .cash-2-save .register-detail p, .cash .cash-2-scan .dolar-1 .cash-1-scan .preload-detail p, .cash .cash-2-scan .dolar-1 .cash-2-save .preload-detail p, .cash .dolar-1 .cash-2-scan .scan-detail p, .cash .cash-2-save .dolar-1 .cash-2-scan .register-detail p, .cash .dolar-1 .cash-2-scan .preload-detail p, .cash .dolar-2 .cash-1-scan .scan-detail p, .cash .cash-2-save .dolar-2 .cash-1-scan .register-detail p, .cash .dolar-2 .cash-2-save .scan-detail p, .cash .dolar-2 .cash-2-save .register-detail p, .cash .cash-2-scan .dolar-2 .cash-1-scan .preload-detail p, .cash .cash-2-scan .dolar-2 .cash-2-save .preload-detail p, .cash .dolar-2 .cash-2-scan .scan-detail p, .cash .cash-2-save .dolar-2 .cash-2-scan .register-detail p, .cash .dolar-2 .cash-2-scan .preload-detail p, .cash .dolar-1 .cash-1-save .scan-detail p, .cash .cash-2-save .dolar-1 .cash-1-save .register-detail p, .cash .cash-2-scan .dolar-1 .cash-1-save .preload-detail p, .cash .dolar-2 .cash-1-save .scan-detail p, .cash .cash-2-save .dolar-2 .cash-1-save .register-detail p, .cash .cash-2-scan .dolar-2 .cash-1-save .preload-detail p, .cash .dolar-1 .cash-1-save .save-detail p, .cash .dolar-2 .cash-1-save .save-detail p {
+.cash .dolar-1 .cash-1-scan .scan-detail p, .cash .dolar-1 .cash-1-save .scan-detail p, .cash .dolar-1 .cash-1-save .save-detail p {
   font-size: 1rem;
-}
-.cash .dolar-1 .cash-1-save .save-detail, .cash .dolar-2 .cash-1-save .save-detail {
-  margin-right: 200px;
 }
 .cash .separator {
   flex: 1;
   border-top: 5px solid #ddd;
   margin: 0 1rem;
 }
-.cash .cash-2-scan .preload-detail {
-  width: 13rem;
-}
-.cash .cash-2-save {
-  width: 13rem;
-}
+
 html {
   min-width: 98vw;
 }
@@ -164,12 +153,12 @@ body {
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 6.5rem;
   border-bottom: solid 1px #ddd;
 }
 .nav .logo {
-  padding: 0 3rem;
+  padding: 0 0 0 3rem;
   display: flex;
   justify-content: space-between;
 }
@@ -243,7 +232,7 @@ body {
   color: #000;
 }
 
-.started .getting, .social-media .getting, .enlaces .getting, .info .getting, .questions .getting, .keep-rewards .getting, .cash .getting, .cash .intro-cash, .extras .getting, .extras .endless {
+.started .getting, .social-media .getting, .enlaces .getting, .info .getting, .questions .getting, .keep-rewards .getting, .cash .getting, .cash .intro-cash, .extras .getting {
   color: #212121;
   text-align: center;
   padding: 8rem 0 0 0;
@@ -291,7 +280,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 375px;
 }
 .favorites .container-menu .product .desc h3 {
   font-weight: 600;
@@ -300,6 +288,11 @@ body {
   font-weight: 600;
 }
 
+.extras .endless {
+  flex-direction: column;
+  text-align: center;
+  padding: 5rem;
+}
 .extras .endless h3 {
   font-size: 1.8rem;
   font-weight: 600;
@@ -318,7 +311,6 @@ body {
   font-weight: 700;
 }
 .cash .intro-cash p {
-  padding: 0 22rem;
   font-weight: 600;
 }
 .cash .separator {
@@ -337,7 +329,7 @@ body {
   background-color: #d4e9e2;
   display: flex;
 }
-.keep-rewards .keep .star img {
+.keep-rewards .keep .star-1 img, .keep-rewards .keep .star-2 img {
   width: 300px;
 }
 .keep-rewards .keep .keep-desc {
@@ -347,7 +339,6 @@ body {
   text-align: center;
 }
 .keep-rewards .keep .keep-desc p {
-  padding: 0 2rem;
   font-weight: 600;
 }
 .keep-rewards .keep .keep-desc p a {
@@ -468,6 +459,122 @@ body {
   font-size: 1rem;
   padding: 0 2rem;
   color: #686868;
+}
+
+@media (max-width: 1000px) {
+  .cash .dolar-1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .keep-rewards {
+    padding: 0;
+  }
+  .keep-rewards .keep {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .keep-rewards .keep img {
+    width: 150px;
+  }
+  .keep-rewards .star-2 {
+    text-align: right;
+  }
+  .keep-desc {
+    padding: 0;
+  }
+  .questions .questions-desc {
+    padding: 2rem;
+  }
+  .info .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .enlaces .pre-footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .social-media .footer .enlaces-foot {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .sec-join {
+    padding: 0;
+    text-align: center;
+  }
+  .sec-join .container {
+    padding: 5rem;
+  }
+  .favorites .fav {
+    padding: 2rem;
+  }
+  .favorites .container-menu .btn-coffee {
+    display: flex;
+  }
+  .favorites .container-menu .btn-coffee .btn-menu span {
+    font-size: 1.5rem;
+  }
+  .favorites .container-menu .product {
+    display: flex;
+    padding: 0;
+    text-align: center;
+    flex-direction: column;
+  }
+  .favorites .container-menu .product .coffe {
+    padding: 0;
+  }
+  .favorites .container-menu .product .desc {
+    padding: 2rem;
+  }
+  .favorites .container-menu .product .desc p {
+    text-align: center;
+  }
+  .extras .endless {
+    display: flex;
+    flex-direction: column;
+  }
+  .extras .endless p {
+    padding: 0;
+  }
+  .extras .extras-cards .desc-extra {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .extras .extras-cards .desc-extra .card-content {
+    padding: 0 1rem 0 2rem;
+    display: flex;
+    text-align: justify;
+  }
+  .cash .dolar-1 {
+    flex-direction: column;
+  }
+  .cash .dolar-1 .cash-1-scan .scan-detail {
+    padding: 0;
+  }
+  .cash .dolar-1 .cash-1-save {
+    padding: 3rem 0;
+  }
+  .cash .dolar-1 .cash-1-save .save-detail {
+    padding: 0;
+  }
+  .cash .dolar-2 {
+    flex-direction: column;
+  }
+  .cash .dolar-2 .cash-2-scan .scan-detail {
+    padding: 0;
+  }
+  .cash .dolar-2 .cash-2-save {
+    padding: 3rem 0;
+  }
+  .cash .dolar-2 .cash-2-save .save-detail {
+    padding: 0;
+  }
+  .questions .questions-desc {
+    padding: 2rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

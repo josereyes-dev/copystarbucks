@@ -16,19 +16,21 @@
 
 <body>
     <nav class="nav">
-        <div class="logo">
+        <div class="logo ">
             <a href="#">
                 <img src="../assets/logo.png" alt="logo principal">
             </a>
-
-            <ul class="main-menu">
-                <li><a href="#">MENU</a></li>
-                <li><a href="#">REWARDS</a></li>
-                <li><a href="#">GIFT CARDS</a></li>
-            </ul>
         </div>
+            <div class="menu d-none d-lg-block">
+                <ul class="main-menu">
+                    <li><a href="#">MENU</a></li>
+                    <li><a href="#">REWARDS</a></li>
+                    <li><a href="#">GIFT CARDS</a></li>
+                </ul>
+            </div>
         <div class="join-now">
-            <a href="#" class="enlace"><span class="material-symbols-outlined icon">location_on</span>Find a store</a>
+            <a href="#" class="enlace d-none d-lg-block"><span
+                    class="material-symbols-outlined icon ">location_on</span>Find a store</a>
             <button class="btn-second">Sign in</button>
             <button class="btn-main">Join now</button>
         </div>
@@ -102,11 +104,11 @@
     <section class="extras">
         <div class="endless">
             <h3>Endless Extras</h3>
-            <p style="padding: 1rem 20rem;">Joining Starbucks® Rewards means unlocking access to exclusive benefits. Say
+            <p>Joining Starbucks® Rewards means unlocking access to exclusive benefits. Say
                 hello to easy ordering, tasty Rewards and—yes, free coffee.</p>
         </div>
-        <div class="extras-cards row">
-            <div class="desc-extra col-md" style="margin-right: 1rem;">
+        <div class="extras-cards row col-md">
+            <div class="desc-extra col-md">
                 <a class="img-extra" href="#"><img src="../assets/freebies.png" alt="Fun-Freebies"></a>
                 <div class="card-content">
                     <h3>Fun freebies</h3>
@@ -125,7 +127,7 @@
                 </div>
 
             </div>
-            <div class="desc-extra col-md" style="margin-left: 1rem;">
+            <div class="desc-extra col-md">
                 <a class="img-extra" href="#"><img src="../assets/faster.png" alt="faster"></a>
                 <div class="card-content">
                     <h3>Get to free faster</h3>
@@ -137,26 +139,26 @@
         </div>
     </section>
     <section class="cash">
-        <div class="intro-cash">
+        <div class="intro-cash col-md">
             <h3>Cash or card, you earn Stars</h3>
             <p>No matter how you pay, you can earn Stars with your morning coffee. Those Stars add up to (really
                 delicious) Rewards.</p>
         </div>
-        <div class="dolar-1">
+        <div class="dolar-1 col-md">
             <div class="cash-1">
                 <span class="p-star">1<i class="bi bi-star-fill star"></i> per dollar</span>
                 <p class="p-detail">Pay as you go</p>
             </div>
-            <div class="cash-1-scan">
+            <div class="cash-1-scan col-md">
                 <img src="../assets/scan.png" alt="scan">
                 <div class="scan-detail">
                     <h3>Scan and pay separately</h3>
                     <p>Use cash or credit/debit card at the register.</p>
                 </div>
             </div>
-            <div class="cash-1-save">
+            <div class="cash-1-save col-md">
                 <img src="../assets/save.png" alt="save">
-                <div class="save-detail">
+                <div class="scan-detail">
                     <h3>Save payment in the app</h3>
                     <p>Check-out faster by saving a credit/debit card or PayPal to your account. You’ll be able to order
                         ahead or scan and pay at the register in one step. </p>
@@ -164,23 +166,23 @@
             </div>
         </div>
         <hr class="separator">
-        <div class="dolar-2">
-            <div class="cash-2">
+        <div class="dolar-1 col-md">
+            <div class="cash-1">
                 <p class="p-star">2<i class="bi bi-star-fill star"></i> per dollar</p>
                 <p class="p-detail">Add founds in the app</p>
             </div>
-            <div class="cash-2-scan">
+            <div class="cash-1-scan col-md">
                 <img src="../assets/preload.png" alt="preload">
-                <div class="preload-detail">
+                <div class="scan-detail">
                     <h3>Preload</h3>
                     <p>To save time and earn Stars twice as fast, add money to your digital Starbucks Card using any
                         payment
                         option. Scan and pay in one step or order ahead in the app. </p>
                 </div>
             </div>
-            <div class="cash-2-save">
+            <div class="cash-1-save col-md">
                 <img src="/assets/register.png" alt="register">
-                <div class="register-detail">
+                <div class="scan-detail">
                     <h3>Register your gift card</h3>
                     <p>Then use it to pay through the app. You can even consolidate balances from multiple cards in one
                         place. </p>
@@ -190,17 +192,17 @@
     </section>
     <section class="keep-rewards">
         <div class="keep">
-            <div class="star">
+            <div class="star-1 d-none d-md-block">
                 <img src="/assets/star.png" alt="star">
             </div>
-            <div class="keep-desc">
+            <div class="keep-desc col-md">
                 <h3>Keep the Rewards Coming</h3>
                 <p>The Rewards don't stop at your morning coffee. Join Starbucks® Rewards and unlock perks from our
                     partners, all while earning more Stars.</p>
                 <div class="keep-img">
                     <img src="/assets/delta-skymiles.png" alt="delta-skymiles">
                 </div>
-                <div class="keep-desc">
+                <div class="keep-desc-link col-md">
                     <p><a href="#">Link your Delta SkyMiles®</a> and Starbucks® Rewards accounts to earn 1 mile per $1*
                         spent at
                         Starbucks
@@ -210,7 +212,7 @@
                     <button class="btn-main">Join Starbucks® Rewards</button>
                 </div>
             </div>
-            <div class="star">
+            <div class="star-2 d-none d-md-block">
                 <img src="/assets/star.png" alt="star">
             </div>
         </div>
@@ -271,7 +273,7 @@
     </section>
     <hr class="separator">
     <section class="enlaces">
-        <div class="pre-footer">
+        <div class="pre-footer col-md ">
             <div class="about column">
                 <ul>
                     <h3>About Us</h3>
@@ -305,7 +307,7 @@
             <div class="businnes column">
                 <ul>
                     <h3>For Business Partners</h3>
-                    <li><a href="#">Landlord Support Center</a>  </li>
+                    <li><a href="#">Landlord Support Center</a> </li>
                     <li><a href="#">Suppliers</a> </li>
                     <li><a href="#">Corporate Gift Card Sales</a> </li>
                     <li><a href="#">Office and Foodservice coffee</a> </li>
@@ -325,7 +327,7 @@
     </section>
     <hr class="separator">
     <section class="social-media">
-        <div class="logs">
+        <div class="logs ">
             <ul class="logs1">
                 <li><a href="#"> <i class="bi bi-spotify"></i></a></li>
                 <li><a href="#"> <i class="bi bi-facebook"></i></a></li>
@@ -335,20 +337,20 @@
                 <li><a href="#"> <i class="bi bi-twitter"></i></a></li>
             </ul>
         </div>
-        <div class="footer">
+        <div class="footer col-md">
             <ul class="enlaces-foot">
                 <li><a href="#"> Privacy Notice</a></li>
-                <span style="padding: 0 1rem;">|</span>
+                <span class="separador d-none d-lg-block" style="padding: 0 1rem; ">|</span>
                 <li><a href="#"> Terms of Use</a></li>
-                <span style="padding: 0 1rem;">|</span>
+                <span class="separador d-none d-lg-block" style="padding: 0 1rem;">|</span>
                 <li><a href="#"> Do Not Share My Personal Information</a></li>
-                <span style="padding: 0 1rem;">|</span>
+                <span class="separador d-none d-lg-block" style="padding: 0 1rem;">|</span>
                 <li><a href="#"> CA Supply Chain Act</a></li>
-                <span style="padding: 0 1rem;">|</span>
+                <span class="separador d-none d-lg-block" style="padding: 0 1rem;">|</span>
                 <li><a href="#"> Cookie Preferences</a></li>
             </ul>
         </div>
-        <div class="p-foot">
+        <div class="p-foot col-md">
             <p>© 2023 Starbucks Coffee Company. All rights reserved.</p>
         </div>
     </section>
