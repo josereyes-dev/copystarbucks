@@ -243,12 +243,12 @@ body {
   color: #000;
 }
 
-.started .getting, .questions .getting, .keep-rewards .getting, .cash .getting, .cash .intro-cash, .extras .getting, .extras .endless {
+.started .getting, .social-media .getting, .enlaces .getting, .info .getting, .questions .getting, .keep-rewards .getting, .cash .getting, .cash .intro-cash, .extras .getting, .extras .endless {
   color: #212121;
   text-align: center;
   padding: 8rem 0 0 0;
 }
-.started .segments-cards, .questions .segments-cards, .keep-rewards .segments-cards, .cash .segments-cards, .extras .segments-cards, .extras .extras-cards {
+.started .segments-cards, .social-media .segments-cards, .enlaces .segments-cards, .info .segments-cards, .questions .segments-cards, .keep-rewards .segments-cards, .cash .segments-cards, .extras .segments-cards, .extras .extras-cards {
   padding: 0 1rem 2rem 2rem;
 }
 
@@ -374,6 +374,100 @@ body {
 }
 .questions .questions-desc p a {
   color: #008248;
+}
+
+.info .wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.5fr 1fr 0.5fr;
+  grid-column-gap: 4px;
+  grid-row-gap: 4px;
+  padding: 2.5rem;
+}
+.info .wrapper .square h3 {
+  font-size: 1rem;
+  color: #686868;
+  padding: 0 0 0.5rem 0;
+  font-weight: 700;
+}
+.info .wrapper .square p {
+  font-size: 0.9rem;
+  margin: 0.5rem;
+}
+.info .wrapper .square a {
+  color: #008248;
+}
+.info .one {
+  grid-area: 1/1/2/3;
+}
+.info .two {
+  grid-area: 2/1/3/2;
+}
+.info .three {
+  grid-area: 2/2/3/3;
+}
+.info .four {
+  grid-area: 3/1/4/2;
+}
+.info .five {
+  grid-area: 3/2/4/3;
+}
+
+.enlaces .pre-footer {
+  display: flex;
+}
+.enlaces .pre-footer .column {
+  padding: 0.5rem 0;
+}
+.enlaces .pre-footer .column ul {
+  list-style: none;
+  width: 15rem;
+}
+.enlaces .pre-footer .column ul h3 {
+  font-size: 1rem;
+  padding: 0.5rem 0;
+}
+.enlaces .pre-footer .column ul li {
+  padding: 0.5rem 0;
+}
+.enlaces .pre-footer .column ul li a {
+  text-decoration: none;
+  color: #686868;
+}
+.enlaces .pre-footer .column ul li a:hover {
+  color: #000;
+}
+
+.social-media .logs .logs1 {
+  display: flex;
+  font-size: 2rem;
+  list-style: none;
+}
+.social-media .logs li {
+  padding: 0 1rem 0 0;
+}
+.social-media .logs li a {
+  color: #000;
+}
+.social-media .footer .enlaces-foot {
+  display: flex;
+  font-size: 1rem;
+  list-style: none;
+}
+.social-media .footer li {
+  padding: 0 1rem 0 0;
+}
+.social-media .footer li a {
+  color: #000;
+  text-decoration: none;
+}
+.social-media .footer li a:hover {
+  text-decoration: underline;
+}
+.social-media .p-foot {
+  font-size: 1rem;
+  padding: 0 2rem;
+  color: #686868;
 }
 
 /*# sourceMappingURL=styles.css.map */
