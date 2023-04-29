@@ -480,6 +480,12 @@ body {
     }
     
 @media (max-width:768px) {
+
+    .nav{        
+        .logo{
+            padding: 0;
+        }
+    }
     .sec-join {
         padding: 0;
         text-align: center;
