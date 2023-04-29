@@ -140,10 +140,6 @@
   margin: 0 1rem;
 }
 
-html {
-  min-width: 98vw;
-}
-
 body {
   padding: 0;
   margin: 0;
@@ -238,7 +234,8 @@ body {
   padding: 8rem 0 0 0;
 }
 .started .segments-cards, .social-media .segments-cards, .enlaces .segments-cards, .info .segments-cards, .questions .segments-cards, .keep-rewards .segments-cards, .cash .segments-cards, .extras .segments-cards, .extras .extras-cards {
-  padding: 0 1rem 2rem 2rem;
+  margin: 0;
+  padding: 0;
 }
 
 .favorites {
@@ -301,6 +298,11 @@ body {
   text-align: center;
   font-weight: 600;
 }
+.extras .extras-cards {
+  margin: 0;
+  padding: 0;
+}
+
 .cash {
   background-color: #f3f1e7;
 }
